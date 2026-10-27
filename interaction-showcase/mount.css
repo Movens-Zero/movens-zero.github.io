@@ -1,0 +1,3 @@
+/* <modify> Section spacing and typography now come from the shared Dataset layout. */
+.movens-interaction-gallery { width: 100%; }
+.movens-interaction-gallery iframe { display: block; border: 0; width: 100%; background: transparent; color-scheme: normal; }

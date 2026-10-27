@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Human–object interaction · Movens-Zero</title>
+  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="embed.css?v=3">
+  <!-- <modify> Fetch small dependencies together, instead of waiting for player startup. -->
+  <link rel="modulepreload" href="timing.js?v=1">
+  <link rel="modulepreload" href="preload.js?v=2">
+  <link rel="preload" href="data.json?v=10" as="fetch" crossorigin>
+</head>
+<body>
+  <header class="embed-toolbar">
+    <div class="guide"><p>Default: G1 · Hover to view SMPL-X · <span id="sample-count">Loading</span></p></div>
+    <button id="pause-all" type="button" aria-pressed="false">Pause all</button>
+  </header>
+  <main>
+    <div id="gallery" class="gallery" aria-label="Human and humanoid object interactions"></div>
+    <p id="load-error" role="alert" hidden>Could not load the gallery. Please refresh to retry.</p>
+    <p id="empty" hidden>No examples available.</p>
+  </main>
+  <!-- <modify> Revision the hover controller; video assets and timing maps are unchanged. -->
+  <script type="module" src="app.js?v=9"></script>
+  <script src="embed-size.js?v=1" defer></script>
+</body>
+</html>
